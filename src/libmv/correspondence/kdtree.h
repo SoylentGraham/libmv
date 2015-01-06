@@ -42,7 +42,7 @@ class PriorityQueue {
     Value value;
     Priority priority;
     Node(Value v, Priority p) : value(v), priority(p) {}
-    bool operator<(const Node &b) {
+    bool operator<(const Node &b) const {
       return priority > b.priority;
     }
   };
